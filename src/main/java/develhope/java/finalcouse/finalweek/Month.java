@@ -1,29 +1,27 @@
 package develhope.java.finalcouse.finalweek;
 
 public enum Month {
-    JANUARY("January", true),
-    FEBRUARY("February", true),
-    MARCH("March", false),
-    APRIL("April", false),
-    MAY("April", false),
-    JUNE("June", false),
-    JULY("July", true),
-    AUGUST("August", false),
-    SEPTEMBER("September", false),
-    OCTOBER("October", false),
-    NOVEMBER("November", false),
-    DECEMBER("December", false);
+    JANUARY("January"),
+    FEBRUARY("February"),
+    MARCH("March" ),
+    APRIL("April"),
+    MAY("April"),
+    JUNE("June"),
+    JULY("July"),
+    AUGUST("August"),
+    SEPTEMBER("September"),
+    OCTOBER("October"),
+    NOVEMBER("November"),
+    DECEMBER("December");
 
     private String name;
-    private boolean endsInY;
 
-    Month(String name, boolean endsInY) {
+    Month(String name) {
         this.name = name;
-        this.endsInY = endsInY;
     }
 
     public String info() {
-        if(endsInY) {
+        if(name.endsWith("y")) {
             return "ends with y";
         }
         return "doesn't end with y";
