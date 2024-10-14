@@ -28,6 +28,10 @@ enum Semaphores {
 
 class SemaphoresDemo {
     public static void main(String[] args) {
-        System.out.println(Semaphores.RED.getNextSemaphoresValue());
+        Semaphores currentState = Semaphores.RED;
+        Semaphores newState = currentState.getNextSemaphoresValue();
+
+        System.out.println("Current: " + currentState);
+        System.out.println("Now: " + newState);
     }
 }
