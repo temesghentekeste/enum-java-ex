@@ -31,6 +31,12 @@ public class _01_Enums {
             SUNDAY
         }
 
+        System.out.println("Printing with values()");
+        for (DayOfTheWeek value : DayOfTheWeek.values()) {
+            System.out.println(value );
+        }
+        System.out.println("Printing with values()");
+
         switch (day) {
             case MONDAY:
                 System.out.println("Lunedi");
@@ -84,6 +90,8 @@ public class _01_Enums {
             SUTURDAY(6),
             SUNDAY(7);
 
+
+
             int dayNumber;
 
             private DaysOfTheWeek(int dayNumber) {
@@ -98,6 +106,10 @@ public class _01_Enums {
 
         System.out.println((DaysOfTheWeek.valueOf("MONDAY")));
         System.out.println(DaysOfTheWeek.values().length);
+
+        for (DaysOfTheWeek value : DaysOfTheWeek.values()) {
+            System.out.println(value + " --> " + value.getDayNumber());
+        }
     }
 }
 
