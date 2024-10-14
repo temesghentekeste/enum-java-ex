@@ -35,5 +35,8 @@ class MainSeasons {
         for (Seasons value : Seasons.values()) {
             System.out.println(value);;
         }
+
+        System.out.println("Other approach");
+        System.out.println(Seasons.WINTER.getDateRange());
     }
 }
