@@ -1,11 +1,54 @@
 package develhope.java.finalcouse.finalweek;
 
 import java.sql.SQLOutput;
+import java.time.DayOfWeek;
+import java.time.MonthDay;
 
 public class _01_Enums {
     public static void main(String[] args) {
         basicDefinition();
+        basicDefinitionWithSwitch(DayOfWeek.FRIDAY);
         associateWithNumericValue();
+
+    }
+
+    private static void basicDefinitionWithSwitch(DayOfWeek day) {
+        enum DayOfTheWeek {
+            MONDAY,
+            TUESDAY,
+            WEDNESDAY,
+            THURSDAY,
+            FRIDAY,
+            SATURDAY,
+            SUNDAY
+        }
+
+        switch (day) {
+            case MONDAY:
+                System.out.println("Lunedi");
+                break;
+            case TUESDAY:
+                System.out.println("Martedi");
+                break;
+            case WEDNESDAY:
+                System.out.println("Mercoledi");
+                break;
+            case THURSDAY:
+                System.out.println("Giovedi");
+                break;
+            case FRIDAY:
+                System.out.println("Venerdi");
+                break;
+            case SATURDAY:
+                System.out.println("Sabato");
+                break;
+            case SUNDAY:
+                System.out.println("Domenica");
+                break;
+            default:
+                System.out.println("Invalid day!");
+
+        }
 
     }
 
