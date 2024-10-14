@@ -10,6 +10,14 @@ public class _01_Enums {
         basicDefinitionWithSwitch(DayOfWeek.FRIDAY);
         associateWithNumericValue();
 
+        Ingredients choice = Ingredients.BUN;
+
+        System.out.println(choice.getPrice());
+
+        UserType admin = UserType.ADMIN;
+
+        System.out.println(admin.getUserTypeInt());
+
     }
 
     private static void basicDefinitionWithSwitch(DayOfWeek day) {

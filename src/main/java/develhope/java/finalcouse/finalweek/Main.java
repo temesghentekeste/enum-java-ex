@@ -12,9 +12,9 @@ public class Main {
 //        System.out.println(strStr("sadbutsad", "sad"));
 //        System.out.println(strStr("hello", "ll"));
 //        System.out.println(strStr("mississippi", "pi"));
-        System.out.println();
+//        System.out.println();
 //        System.out.println(singleNumber(new int[] {4,1,2,1,2}));
-        System.out.println(isPalindrome("A man, a plan, a canal: Panama"));
+//        System.out.println(isPalindrome("A man, a plan, a canal: Panama"));
     }
 
     public static boolean isPalindrome(int x) {
